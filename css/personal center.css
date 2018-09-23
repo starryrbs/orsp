@@ -1,0 +1,227 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td {
+    margin: 0;
+    padding: 0
+}
+.div01{
+    height: 32px;
+    line-height: 32px;
+    font-size: 10px;
+    background-color:#CD0000;
+    z-index: 2;
+    position: relative;
+    display: block;
+}
+.div01 .first{
+    width: 1000px;
+    height: 32px;
+    left: 264px;
+    right: 1264px;
+    bottom: 32px;
+    margin: auto;
+    display: flex;
+    background-color: #CD0000;
+}
+
+.div01 .first .div02{
+    width: 48px;
+    height: 32px;
+    color: white;
+    font-size: 14px;
+    background-color: #CD0000;
+    box-sizing: border-box;
+    letter-spacing: 2px;
+}
+.div01 .first .shu{
+    font-size: 14px;
+    color: white;
+}
+/*.div01 .first .div02 .zi{*/
+/*letter-spacing:5px*/
+/*}*/
+.div01 .first .div02 :hover{
+    background-color:#CD0000;
+}
+
+.div01 .second{
+    width: 106px;
+    height: 32px;
+    color: white;
+    font-size: 15px;
+    padding-left:10px;
+}
+.div01 .second:hover{
+    background-color: #CD0000;
+}
+.div01 .second .tu{
+    width: 20px;
+    height: 20px;
+    color: white;
+    padding-top: 8px;
+}
+.div01 .second .xiazai{
+    position: relative;
+    top: -5px;
+    left: 0;
+    font-size: 14px;
+}
+.div01 .kong{
+    width: 570px;
+    background:#CD0000;
+}
+.div01 .third{
+    width: 155px;
+    background: #CD0000;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+}
+.div01 .forth{
+    width: 100px;
+    background: #CD0000;
+    color: white;
+    text-align: center;
+}
+.div01 .fifth{
+    width: 100px;
+    background: #CD0000;
+    color: white;
+    text-align: center;
+}
+.div01 .er{
+    width: 100%;
+    height: 57px;
+    background: white;
+    border-bottom: 1px solid #cbcbcb;
+
+}
+.div01 .er .sec{
+    width: 1000px;
+    height: 57px;
+    background-color:white;
+    margin: auto;
+    display: flex;
+
+}
+.div01 .er .sec .tu{
+    padding-top:10px;
+}
+.div01 .er .sec .tu2{
+    padding-top:20px;
+    margin-left: 3px;
+}
+.div01 .er .kong2 {
+    width: 150px;
+    background: white;
+}
+.div01 .er .sy{
+    width: 32px;
+    height: 56px;
+    text-align: right;
+    font-size: 16px;
+    margin-top: 10px;
+}
+.div01 .er .kong3{
+    width: 40px;
+    height: 48px;
+}
+.div01 .er .zw{
+    width: 65px;
+    height: 44px;
+    text-align: right;
+    font-size: 16px;
+    margin-top: 10px;
+    color: orangered;
+    font-weight: bold;
+    border-bottom: 4px solid orangered;
+
+}
+.div01 .er .dq{
+    width: 105px;
+    height: 56px;
+    text-align: right;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.div01 .er .zc{
+    width: 105px;
+    height: 56px;
+    text-align: right;
+    font-size: 16px;
+    margin-top: 10px;
+}
+.div01 .er .xy{
+    width: 105px;
+    height: 56px;
+    text-align: right;
+    font-size: 16px;
+    margin-top: 10px;
+}
+.div01 .er .wy{
+    width: 101px;
+    height: 56px;
+    text-align: right;
+    font-size: 16px;
+    margin-top: 10px;
+}
+.div01 .san{
+    width: 1002px;
+    height: 130px;
+    background-color: #7E849F;
+    margin: auto;
+    display: flex;
+    border-top: 12px solid white;
+    border-bottom: 12px solid white;
+}
+.div01 .san1{
+    width: 970px;
+    height: 86px;
+    background-color: white;
+    margin-top: 15px;
+    margin-left: 15px;
+    position: relative;
+    display: flex;
+
+}
+.div01 .san1 .san11{
+    width: 240px;
+    height: 86px;
+    border-right: 1px solid #cbcbcb;}
+.div01 .san1 .san12{
+    width: 160px;
+    height: 86px;
+    border-right: 1px solid #cbcbcb;}
+.div01 .san1 .san13{
+    width: 227px;
+    height: 86px;
+    border-right: 1px solid #cbcbcb;}
+.div01 .san1 .san14{
+    width: 345px;
+    height: 86px;
+}
+.div01 .san1 .dz{
+    font-size: 16px;
+    color: gray;
+    margin-top: 14px;
+    margin-left: 18px;
+    font-weight: normal;
+}
+.div01 .san1 .xz{
+    font-size: 14px;
+    color: #aaaaaa;
+    margin-top: -5px;
+    margin-left: 18px;
+    font-weight: normal;
+}
+.div01 .san1 .san14 .button{
+    width: 92px;
+    height: 50px;
+    background-color: orangered;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    float: right;
+    margin-right: 23px;
+    margin-top: -55px;
+    text-align: center;
+}

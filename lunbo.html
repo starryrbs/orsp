@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Carousel Figure</title>
+    <style>
+        ul {
+            list-style: none;
+
+        }
+
+        .good-sowing-map {
+            width: 702px;
+            height: 434px;
+            background-color: yellow;
+            margin-left: 190px;
+            position: relative;
+        }
+
+        .dot-point:hover {
+            cursor: pointer;
+        }
+
+        .dot-point {
+            width: 80px;
+            height: 20px;
+            position: absolute;
+            bottom: 0px;
+            right: 311px;
+            padding-left: 0;
+        }
+
+        .dot-point > li {
+            width: 8px;
+            height: 8px;
+            border: 1px solid black;
+            border-radius: 100%;
+            float: left;
+            margin-left: 5px;
+        }
+
+        .on-img {
+            background-color: black;
+        }
+
+        .sowing-img {
+            padding-left: 0;
+            margin: 0 auto;
+        }
+
+        .sowing-img > li > img {
+            width: 690px;
+            height: 420px;
+        }
+
+        .good-sowing-map > span {
+            width: 24px;
+            height: 26px;
+            /*background-color: #ff686e;*/
+            position: absolute;
+            top: 190px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            display: none;
+        }
+
+        .good-sowing-map:hover > span {
+            display: block;
+        }
+
+        .good-sowing-map > span:hover {
+            cursor: pointer;
+        }
+
+        .left-arrow {
+            background-image: url("images/left.svg");
+        }
+
+        .right-arrow {
+            right: 0px;
+            background-image: url("images/right.svg");
+        }
+    </style>
+</head>
+<body>
+<!--从左向右滑动-->
+<div class="good-sowing-map">
+    <ul class="dot-point">
+        <li class="on-img" data-img-id="0"></li>
+        <li data-img-id="1"></li>
+        <li data-img-id="2"></li>
+        <li data-img-id="3"></li>
+        <li data-img-id="4"></li>
+    </ul>
+    <ul class="sowing-img">
+        <li><img src="images/file1.png" alt="img1"></li>
+        <li><img src="images/file2.png" alt="img2"></li>
+        <li><img src="images/file3.png" alt="img3"></li>
+        <li><img src="images/file4.png" alt="img4"></li>
+        <li><img src="images/file5.png" alt="img5"></li>
+    </ul>
+    <span class="left-arrow" data-arrow-id="0"></span>
+    <span class="right-arrow" data-arrow-id="1"></span>
+</div>
+<div style="width: 100%;height: 40px;background-color: yellow">123</div>
+<script>
+    img_index = 0;
+    //轮播图定时器
+    tt = null;
+    sowing_img = document.querySelector('.sowing-img');
+    let imgs = sowing_img.querySelectorAll('img');
+    dot_point = document.querySelector('.dot-point');
+    //左右切换
+    //左右箭头
+    let arrow_spans = document.querySelectorAll('.good-sowing-map>span');
+    for (let arrow_span of arrow_spans) {
+        arrow_span.addEventListener('click', function (event) {
+            if (parseInt(event.target.dataset.arrowId) == 0) {
+                if (img_index == 0) {
+                    img_index = imgs.length
+                }
+                clearInterval(tt);
+                for (let i of imgs) {
+                    i.style.display = "none";
+                }
+                img_index--;
+                change_dot();
+                img_sowing();
+                imgs[img_index].style.display = "block";
+
+
+            } else {
+                img_index++;
+                if (img_index == imgs.length) {
+                    img_index = 0
+                }
+                clearInterval(tt);
+
+                for (let i of imgs) {
+                    i.style.display = "none";
+                }
+
+                change_dot();
+                img_sowing();
+                imgs[img_index].style.display = "block";
+            }
+        })
+    }
+    dot_point.addEventListener('mouseover', function (event) {
+
+        if (event.target.nodeName == "LI") {
+            clearInterval(tt);
+            i = 0;
+            for (let p_li of dot_point.children) {
+                p_li.className = "";
+                imgs[i].style.display = "none";
+                i++;
+            }
+            img_index = parseInt(event.target.dataset.imgId);
+            imgs[img_index].style.display = 'block';
+            event.target.className = "on-img";
+        }
+
+    });
+    dot_point.addEventListener('mouseleave', function (event) {
+        img_sowing()
+    });
+
+    function img_sowing() {
+        clearInterval(tt);
+        tt = setInterval(function () {
+            let dot_index = 0;
+            for (let img of imgs) {
+                img.style.display = 'none';
+                dot_point.children[dot_index].className = "";
+                dot_index += 1;
+            }
+            imgs[img_index].style.display = 'block';
+            dot_point.children[img_index].className = "on-img";
+
+            if (img_index === imgs.length - 1) {
+                img_index = -1
+            }
+
+            img_index += 1;
+        }, 3000)
+    }
+
+    img_sowing();
+
+    function change_dot() {
+        for (let img = 0; img <= imgs.length - 1; img++) {
+            dot_point.children[img].className = ""
+
+        }
+        dot_point.children[img_index].className = "on-img"
+    }
+</script>
+</body>
+</html>

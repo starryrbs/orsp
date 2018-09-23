@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人中心</title>
+
+    <style>
+        .charge_shop{display:inline-block;height: 20px;max-width:75px;white-space:nowrap; text-overflow:ellipsis; -o-text-overflow:ellipsis; overflow:hidden;}
+        .buy_box{width:220px;position:absolute;top:43px;left:275px;font-size:14px;}
+        .buy_box a{margin-right:3px;}
+        .charge_img{ width:68px !important; margin-right:10px; }
+        .charge_img img{margin-right:4px;vertical-align: sub;}
+        .demand-box{margin:126px 20px 0 20px;padding:20px 0 0 0;border-top:1px dotted #ccc;font-size:16px;color:#333;}
+        .demand-box span a{color:#333;}
+        .shop_auth,.shop_name{max-width:75px;white-space:nowrap; text-overflow:ellipsis; -o-text-overflow:ellipsis; overflow:hidden;}
+    </style>
+    <link rel="stylesheet" href="css/global_common.css">
+    <link rel="stylesheet" href="css/user.css">
+</head>
+<body>
+
+<input type="hidden" id="id" value="1180132">
+<div class="header_top">
+    <div class="wp">
+
+        <ul class="top_left fl">
+            <li>你好！易斯先生   <span class="line">|</span></li>
+            <li><a href="#">退出</a></li>
+            <li><a href="#" target="_blank">消息 <span class="col_ff7e00" id="NoReadCount">(0)</span> </a></li>
+        </ul><!--/fl-->
+        <ul class="top_rit fr">
+            <li><a href="#" target="_blank">易物天下首页</a><span class="line">|</span></li>
+            <li><img src="images/cart.png" height="12" width="12" class="cart_img"><a href="#" target="_blank">换物车</a>
+                <span class="col_ff7e00" id="scCount">(0)</span>
+                <span class="line">|</span></li>
+            <li><a href="#" target="_blank">我的收藏</a><span class="line">|</span></li>
+
+            <li><a href="#" target="_blank">易物指南</a><span class="line">|</span></li>
+            <li><a href="#" target="_blank">购买诚信商</a><span class="line">|</span></li>
+            <li>客服电话：400-688-3913</li>
+        </ul>
+    </div><!--/wp-->
+
+</div>
+<div class="clear"></div>
+<div id="header">
+    <div id="top2">
+        <div class="userCenter">
+            <div class="logo fl"><span></span> <em>|</em></div>
+            <div class="search_box fr">
+                <div class="search_type fl">
+                    <ul><li id="1">商品</li>
+
+                        <li id="3">店铺</li>
+                        <i class="searchfolloarrow"></i>
+                    </ul>
+                </div>
+                <input type="text" class="fl" id="search_result">
+                <span class="search fl"><a id="search_fl" href="#">搜索</a></span>
+            </div>
+            <div class="nav fl">
+                <ul>
+                    <li><a href="#">首页</a> <span></span></li>
+                    <li><a href="#">自助服务</a> <span></span></li>
+                    <li><a href="#">账户管理</a> <span></span></li>
+                    <li><a href="#">消息中心</a> <span></span></li>
+                    <input type="hidden" id="userRank" value="0">
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/header-->
+
+<!--/公共头部结束-->
+<div id="box" class="fl">
+    <div class="userCenter pt">
+        <!-- 左栏  start -->
+
+        <!--左侧部分开始-->
+        <div class="clear"></div>
+        <div class="wp pt">
+            <div id="userLeft">
+                <div class="left1">
+                    <div class="left_title fl pl">常用功能</div>
+                    <div id="div1" class="left1_nav fl pl">
+                        <ul><li class="nav_1"><span></span><a href="#">我的订单</a></li><li class="nav_2"><span></span><a href="#">发布商品</a></li><li class="nav_3"><span></span><a href="#">商品管理</a></li><li class="nav_4"><span></span><a del="exclude" href="#">匹配中心</a></li><li class="nav_5"><span></span><a href="#">店铺设置</a></li><li class="nav_8"><span></span><a href="#">已交易店铺</a></li></ul>
+                    </div>
+
+                    <div class="left_title fl pl" style="margin-top:20px">基础功能</div>
+                    <div class="left2_nav fl pl">
+                        <ul>
+                            <li>
+                                <span><em class="fl"></em><p class="fl">订单中心</p></span>
+                            </li>
+                            <li>
+                                <span><em class="fl"></em><p class="fl">商品管理</p></span>
+                            </li>
+                            <li>
+                                <span><em class="fl"></em><p class="fl">店铺管理</p></span>
+                            </li>
+                            <li>
+                                <span><em class="fl"></em><p class="fl">物流管理</p></span>
+                            </li>
+                            <li>
+                                <span><em class="fl"></em><p class="fl">我的收藏</p></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!--左侧部分结束-->
+
+            <!--弹出层背景遮罩-->
+            <div class="page-shadow"></div>
+
+
+            <!-- 左栏  end -->
+
+            <!-- 右栏  start -->
+            <div id="shopRight">
+                <div class="shop_message1 border fl">
+                    <div class="shop_m fl">
+                        <h2 class="fl border">
+
+
+                            <!--<img src="./会员中心_files/78421535451120038.jpg" height="90" width="90" alt="" class="fl">-->
+
+                            <img src="images/78421535451120038.jpg" height="90" width="90" alt="" class="fl"/></h2>
+
+                        <ul class="fl mar_l_20">
+                            <li><span class="shop_auth fl" style="margin-top:10px;">
+
+									<a href="http://www.i1515.com/v2/user/startAuth.html?state=3" target="_blank" class="charge_shop">认证</a>
+
+
+							</span>
+                                <span class="shop_name fl" style="margin:10px 10px 0 20px;">(易斯先生)</span>
+
+                            </li>
+                            <li class="fl" style="width:140px;">
+
+                                <a href="#" target="_blank" class="charge_shop">免费开店</a>
+
+                                <a href="#" class="charge_shop" style="color:#333;">普通会员</a>
+                            </li>
+                            <li class="buy_box">
+
+                                <a id="buy" style="" href="#" target="_blank" class="col_c80">[购买诚信商]</a>
+                                <a id="renew" style="display: none;" href="#" target="_blank" class="col_c80">[续费诚信商]</a>
+                                <a id="activate" style="display: none;" href="#" target="_blank" class="col_c80">[激活诚信商]</a>
+                            </li>
+                            <div class="cl" style="height:25px;position:absolute;top:75px;">
+                                <li class="charge_img"><a href="#" class="f01"> <img src="images/f04.png" height="14" width="10"/>绑定手机</a></li>
+
+                                <p class="por_adb PsComment" style="position: absolute; top: 26px; left: -50px; display: none;">
+                                    <b></b>绑定手机:<span>15764323981</span>
+                                    <a href="#" target="_blank">换绑</a>
+                                </p>
+                                <li class="charge_img"><a href="#" class="f02"> <img src="images/f05.png" height="14" width="14"/>编辑资料</a></li>
+
+                                <li class="charge_img"><a href="#" class="f03">
+
+
+                                </a><a href="#" target="_blank"> <img src="images/f07.png" height="14" width="15"/>开通店铺</a>
+
+                            </div>
+
+                        </ul>
+                    </div>
+
+                    <!--需求变到这里了-->
+                    <div class="demand-box">需求：<span>
+								邮票
+							</span>
+                    </div>
+
+                </div>
+                <div class="shopleft fl mt15">
+                    <div class="information border fl" id="alreadyCertified" style="display: none;">
+                        <!--<p class="information_tit">-->
+                            <!--<span class="col_c80 fr"></span><span class="fl">待办提醒</span>-->
+                        <!--</p>-->
+                        <div class="information_list fl" style="width: 100%">
+                            <p class="order_adm">订单管理</p>
+                        </div>
+                        <div class="information_list fl" style="width: 100%">
+                            <p class="order_adm">商品管理</p>
+
+                        </div>
+                    </div>
+
+                    <div class="information border fl" id="notCertified" style="">
+                        <p class="information_tit">
+                            <span class="col_c80 fr"></span><span class="fl">新手入门</span>
+                        </p>
+
+                        <div class="fl" style="width: 100%">
+                            <ul class="information_type">
+                                <li>
+
+                                    <a href="#">认证</a>
+
+                                </li>
+
+                                <li><a href="#">一键开店</a></li>
+
+                                <li><a href="#">发布产品</a></li>
+                                <li><a href="#" target="_blank">匹配中心</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="information product_list fl border mt15">
+                        <p class="information_tit">
+							<span class="fr">
+
+								<a id="collectInfo" href="#">更多 &gt;</a>
+							</span>
+
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="shopright fr">
+
+                    <i class="cl"></i>
+                    <p class="hg_20"></p>
+                    <div class="newP information product_list fl border">
+                        <p class="information_tit">
+                            <span class="fr"><a target="_blank" href="#">更多 &gt;</a></span> <span class="fl">新手入门</span>
+                        </p>
+                        <ul class="new_change">
+                            <li><span>[ 新手换物 ]</span> <a target="_blank" href="#">会员注册</a></li>
+                            <li><span>[ 新手换物 ]</span> <a target="_blank" href="#">实名认证</a></li>
+                            <li><span>[ 新手换物 ]</span> <a target="_blank" href="#">商品发布</a></li>
+                            <li><span>[ 新手换物 ]</span> <a target="_blank" href="#">需求设置</a></li>
+                        </ul>
+                    </div>
+                    <!--最近浏览-->
+
+                    <!--易物案例-->
+                    <i class="cl"></i>
+                    <div class="customer_core border">
+                        <p class="information_tit">
+                            <span class="fr"><a href="#">更多 &gt;</a></span> <span class="fl">易物案例</span>
+                        </p>
+                        <div class="customer_box">
+
+                            <p>80后小伙开以物换物咖啡店 人生经历也可交换物品</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <!-- 右栏  end -->
+        </div>
+    </div>
+    <div id="bottom"></div>
+    <div class="clear"></div>
+
+    <!--公共底部 footer.html--无无无>
+
+
+    <!--违反规定弹窗-->
+    <div class="page-shadow"></div>
+    </div>
+</div></body></html>

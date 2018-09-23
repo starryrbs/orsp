@@ -1,0 +1,130 @@
+
+.header{
+    width: 100%;
+    height: 20px;
+    background-color: lightgray;
+}
+body,ul,li{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #999;
+    font: 12px/1.5 Microsoft YaHei,tahoma,arial,Hiragino Sans GB,\\5b8b\4f53,sans-serif;;
+    font-weight: 200;
+}
+.icon-change{
+    width: 40px;
+    height:20px;
+    background-image: url("../images/change.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    /*background-position: -20px;*/
+    float: left;
+
+    display: none;
+}
+.header ul li{
+    float: left;
+    width: 70px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+}
+.header ul li:nth-child(4){
+    margin-left: 600px;
+}
+.header ul li:nth-child(1){
+    margin-left: 200px;
+}
+.header ul li:nth-child(5) img{
+    width: 16px;
+    height: 16px;
+    position: relative;
+    top: 4px;
+}
+.header ul li:nth-child(6) img{
+    width: 14px;
+    height: 14px;
+    position: relative;
+    top: 2px;
+    left: -2px;
+}
+a:hover{
+    color: red;
+}
+.logo-container{
+    width: 200px;
+    margin-left: 200px;
+
+}
+.logo-container div{
+    float: left;
+}
+.logo-icon{
+    width: 80px;
+    height: 80px;
+    /*background-color: #1eff06;*/
+}
+.logo-icon img{
+    width: 80px;
+    height: 80px;
+}
+.logo-text{
+    width: 100px;
+    height: 80px;
+    /*background-color: #1eff06;*/
+}
+.logo-text img{
+    width: 100px;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+/*搜索框*/
+.search-container-div{
+    width: 532px;
+    height: 35px;
+    border: 1px solid grey;
+    float: left;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+.search-container-div input{
+    width: 448px;
+    height: 35px;
+    line-height: 35px;
+    outline: none;
+    box-sizing: border-box;
+    border: none;
+    float: left;
+    font-size: 12px;
+
+}
+.search-container-div>img{
+    width: 31px;
+    height: 31px;
+    margin-top: 2px;
+}
+.search-container-div>img:hover{
+    cursor: pointer;
+}
+.search-container-div>div{
+    width: 40px;
+    height: 35px;
+    float: right;
+    background-image: url("../images/search/search.png");
+    background-repeat: no-repeat;
+    background-position: 5px;
+    background-color: #F10215;
+    position: relative;
+    left: 1px;
+
+}
+.search-container-div>div:hover{
+    cursor: pointer;
+}

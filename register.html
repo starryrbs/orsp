@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Title</title>
+    <link rel="stylesheet" href="css/clear.css">
+    <link rel="stylesheet" href="css/register_login.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <link rel="stylesheet" href="dist/css/bootstrap.css">
+    <link rel="stylesheet" href="dist/css/bootstrap-theme.css">
+    <script src="js/ajax.js"></script>
+    <link rel="stylesheet" href="css/slide_button/slide.css">
+</head>
+<body>
+
+
+
+
+<div class="container">
+<div class="div-register">
+        <div class="id-container">
+
+
+            <div style="line-height: 53px">
+                <img src="images/register/1.svg" alt="">
+                验证手机号</div>
+            <div style="line-height: 53px">
+                <img src="images/register/2.svg" alt="">
+                填写账号基本信息
+            </div>
+            <div style="line-height: 53px">
+                <img src="images/register/3.svg" alt="">
+                注册成功
+            </div>
+        </div>
+    <div class="telephone-div">
+
+        <div class="input-div">
+            <div>
+                <div style="float: left">中国</div>
+                <div><input type="text" maxlength="11" id="telephone"></div>
+            </div>
+            <!--<div id="verification" class="drag">-->
+            <div class="drag">
+                <div class="bg"></div>
+                <div class="text" onselectstart="return false;">请拖动滑块解锁</div>
+                <div class="btn">&gt;&gt;</div>
+            </div>
+            <div id="next_step_1">下一步</div>
+            <div style="width: 100%;height: 10px;text-align: center;color: red;font-size: 12px" id="tel_tag"></div>
+        </div>
+
+
+        <!--<div class="drag">-->
+                <!--<div class="bg"></div>-->
+                <!--<div class="text" onselectstart="return false;">请拖动滑块解锁</div>-->
+                <!--<div class="btn">&gt;&gt;</div>-->
+            <!--</div>-->
+
+
+        <div class="have-account">已有账号?<a href="login.html">去登录</a></div>
+        <div class="login-third">
+            <p>第三方登录</p>
+            <div class="login-third-icon">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+
+            </div>
+        </div>
+    </div>
+    <div class="account-msg">
+        <div class="nickname">
+            <div>用户名</div>
+            <input type="text" placeholder="请输入您的用户名" maxlength="15">
+            <p class="news-tips"></p>
+        </div>
+        <div class="password">
+            <div>密码</div>
+            <input type="password" placeholder="请输入您的密码" maxlength="20">
+            <p class="news-tips" ></p>
+            <div class="progress progress_psd_par">
+                <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60"
+                     aria-valuemin="0" aria-valuemax="100">
+                    <span class="sr-only">40% 完成</span>
+                </div>
+            </div>
+        </div>
+        <div class="password_confirm">
+            <div>确认密码</div>
+            <input type="password" placeholder="请重新输入您的密码" maxlength="20">
+            <p class="news-tips" ></p>
+        </div>
+        <div id="next_step_2">下一步</div>
+    </div>
+    <div class="register-success">
+        <img src="images/register/ok.svg" alt="">
+        <p>恭喜您注册成功!</p>
+        <div id="return_index">返回首页</div>
+    </div>
+</div>
+</div>
+
+<script src="js/register.js"></script>
+
+</body>
+</html>

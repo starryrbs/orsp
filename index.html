@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Keywords" content="易物网,易货贸易,以物易物,易货,换物,换客网,交换网,天下易货,天下易物,物品交换网" />
+    <meta name="Description" content="易物天下是拥有商务部批准特许经营权的以物易物网络平台,同时易物网络平台的先锋,易物天下为您提供海量的易货信息,充分满足您免费查看/发布信息的需求,闲置物品置换请到易物天下网" />
+    <meta name="viewport" content="width=device-width,height=device-height, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>易物天下-专业的以物易物网络平台 易货贸易用您所有,换您所需
+
+    </title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/nav.css">
+
+    <style>
+        @media screen and (max-width: 1170px){
+
+        }
+
+        @media screen and (max-width: 970px){
+            .container{
+                background-color: blue;
+            }
+            body{
+                overflow:-Scroll;
+                overflow-x:hidden;
+            }
+            .main{
+                display: none;
+            }
+            .header-container{
+                height: 100%;
+                background-color: black;
+
+            }
+            .header{
+            height: 100%;
+                         }
+            .header ul{
+                z-index: 10;
+                height: 100%;
+                display: none;
+                transition:height 2s;
+            }
+            .header ul li{
+                float: none;
+                margin: 0;
+                width: 100%;
+                /*height: 50px;*/
+                /*background-color: #1eff06;*/
+                background-color: black;
+                border-bottom: 1px solid grey;
+                text-align: left;
+                padding-left: 20px;
+                margin-top: 20px;
+            }
+            .header ul li a{
+                font-size: 16px;
+            }
+            .header ul li:nth-child(1){
+                margin-left: 0;
+            }
+            .header ul li:nth-child(4){
+                margin-left: 0;
+            }
+            .icon-change{
+                display: block;
+                float: none;
+            }
+            .icon-change:hover{
+                cursor: pointer;
+            }
+            .container{
+                background-color: red;
+            }
+            .industry{
+                margin-left: 0px;
+            }
+            .logo_wrap{
+                margin-left: 100px;
+            }
+            .login_box{
+                /*margin-right: 359px;*/
+            }
+
+        }
+        @media screen and (max-width: 750px){
+            .container{
+                background-color: yellow;
+            }
+
+        }
+    </style>
+    <script src="js/ajax.js"></script>
+    <script src="js/jquery-3.2.1.js"></script>
+
+
+</head>
+<body>
+<div class="container">
+
+    <!--导航栏框架-->
+    <!--<iframe id="bd-iframe" src="nav.html" name="nav" width="100%" marginwidth="0" height="31px" marginheight="0" scrolling="auto" frameborder="0"></iframe>-->
+
+    <header class="header-container">
+        <div class="icon-change"></div>
+        <header class="header">
+            <ul>
+                <li><a href="#">苏州你好</a></li>
+                <li><a href="login.html">您好,请登录</a></li>
+                <li><a href="register.html">免费注册</a></li>
+                <li><a href="#">我的orsp</a></li>
+                <li><a href="#"><img src="images/shop_car_empty.svg" alt="">
+                    换物车</a></li>
+                <li><a href="#"><img src="images/collect.svg" alt="">收藏夹</a></li>
+                <li><a href="#">联系客服</a></li>
+            </ul>
+        </header>
+        <nav>
+            <div class="logo-container">
+                <div class="logo-icon">
+                    <a href="####">
+                        <img src="images/logo/logo-icon-1.png" alt="">
+                    </a>
+                </div>
+                <div class="logo-text">
+                    <a href="####"><img src="images/logo/logo-1.png" alt=""></a>
+                </div>
+            </div>
+            <!--<div class="industry fl">-->
+                <!--<a href="####" class="industry-hover">-->
+                    <!--<div class="industry-img fl"></div>-->
+                    <!--行业分类-->
+                <!--</a>-->
+                <!--<ul class="industry-items">-->
+                    <!--<li><a href="####">服装鞋包</a><b> > </b></li>-->
+                    <!--<li><a href="####">服装鞋包</a><b> > </b></li>-->
+                    <!--<li><a href="####">服装鞋包</a><b> > </b></li>-->
+                    <!--<li><a href="####">服装鞋包</a><b> > </b></li>-->
+                    <!--<li><a href="####">服装鞋包</a><b> > </b></li>-->
+                    <!--<li><a href="####">服装鞋包</a><b> > </b></li>-->
+                    <!--<li><a href="####">服装鞋包</a><b> > </b></li>-->
+                    <!--<li><a href="####">服装鞋包</a><b> > </b></li>-->
+                    <!--<li><a href="####">服装鞋包</a><b> > </b></li>-->
+
+
+                <!--</ul>-->
+                <!--<div class="clear"></div>-->
+            <!--</div>-->
+
+            <!--<div class="logo_wrap fl"></div>-->
+            <div class="search-container-div">
+                <input type="text">
+                <img src="images/search/camera_grey.png" alt="">
+                <div class=""></div>
+            </div>
+            <!--<ul class="login_box fr">-->
+
+                <!--<li><a href="register.html">注册</a></li>-->
+                <!--<li><a href="login.html">会员登录</a> <div class="login_box-img-01"></div> </li>-->
+                <!--<li>合作单位登录<div class="login_box-img-01"></div></li>-->
+                <!--<li><div class="login_box-img-card"></div></li>-->
+            <!--</ul>-->
+        </nav>
+    </header>
+
+    <main>
+        <!--<div class="search-div-container">-->
+            <!--<div class="search-div">-->
+                <!--<div contenteditable="true"></div>-->
+                <!--<div></div>-->
+                <!--<div contenteditable="true"></div>-->
+            <!--</div>-->
+        <!--</div>-->
+        <div class="so-box">
+            <div class="so-box-content">
+                <ul class="type_li">
+                    <li>换产品</li>
+                    <li>换服务</li>
+                    <li>闲余换</li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="goods-div">
+            <div class="goods-container">
+            <div class="goods-type">
+                <ul class="good-ul">
+                    <!--<li class="good-li">-->
+                        <!--<a href="##">男鞋</a>-->
+                        <!--<span></span>-->
+                    <!--</li>-->
+                    <!--<li class="good-li">-->
+                        <!--<a href="##">女鞋</a>-->
+                        <!--<img src="" alt="">-->
+                    <!--</li>-->
+                </ul>
+            </div>
+
+                <div class="goods-type-two">
+                    <div class="good-panel">
+                        <h1 >女装</h1>
+                        <p class="good-two">
+                            <a href="">女装</a>
+                            <a href="">女装</a>
+                            <a href="">女装</a>
+                        </p>
+                    </div>
+            </div>
+
+                <div class="good-sowing-map">
+
+
+                </div>
+
+
+            </div>
+        </div>
+        <!--玩法介绍-->
+        <div class="regulate-prod">
+            换物玩法
+        </div>
+        <p>让您闲置的物品转起来，换您需要的商品，换您想要的服务</p>
+        <p>平台内有百万注册用户，每天都有新用户加入这个大家庭，每天都有不同的商品加入到这个市场里
+        </p>
+        <div class="flow_box">
+            <ul>
+                <li><a href="####"><img src="images/flow1.png" alt="">
+                    <div>
+                        <p>发布产品</p>
+                        <p>填写产品基本信息</p>
+                    </div>
+                </a></li>
+                <li><a href="####"><img src="images/flow5.png" alt="">
+
+                </a></li>
+                <li><a href="####"><img src="images/flow2.png" alt="">
+                    <div>
+                        <p>交换产品</p>
+                        <p>搜索匹配产品，进行交换</p>
+                    </div>
+                </a></li>
+                <li><a href="####"><img src="images/flow6.png" alt="">
+
+                </a></li>
+                <li><a href="####"><img src="images/flow3.png" alt="">
+                    <div>
+                        <p>银联担保</p>
+                        <p>第三方担保，冻结保证金</p>
+                    </div>
+                </a></li>
+                <li><a href="####"><img src="images/flow5.png" alt="">
+
+                </a></li>
+                <li><a href="####"><img src="images/flow4.png" alt="">
+                    <div>
+                        <p>交换成功</p>
+                        <p>双方接收货物</p>
+                    </div>
+                </a></li>
+            </ul>
+        </div>
+        <div class="regulate-prod">
+            名品换
+        </div>
+        <div class="product_brand">
+            <ul>
+                <li><a href="####"><img src="images/30081486539751187%20(2).png" alt=""></a></li>
+                <li><a href="####"><img src="images/30081486539751187%20(2).png" alt=""></a></li>
+                <li><a href="####"><img src="images/30081486539751187%20(2).png" alt=""></a></li>
+                <li><a href="####"><img src="images/30081486539751187%20(2).png" alt=""></a></li>
+                <li><a href="####"><img src="images/30081486539751187%20(2).png" alt=""></a></li>
+                <li><a href="####"><img src="images/30081486539751187%20(2).png" alt=""></a></li>
+                <li><a href="####"><img src="images/30081486539751187%20(2).png" alt=""></a></li>
+                <li><a href="####"><img src="images/30081486539751187%20(2).png" alt=""></a></li>
+                <li><a href="####"><img src="images/30081486539751187%20(2).png" alt=""></a></li>
+                <li><a href="####"><img src="images/30081486539751187%20(2).png" alt=""></a></li>
+                <li><a href="####"><img src="images/30081486539751187%20(2).png" alt=""></a></li>
+                <li><a href="####"><img src="images/30081486539751187%20(2).png" alt=""></a></li>
+                <li><a href="####"><img src="images/30081486539751187%20(2).png" alt=""></a></li>
+                <li><a href="####"><img src="images/30081486539751187%20(2).png" alt=""></a></li>
+                <li><a href="####"><img src="images/30081486539751187%20(2).png" alt=""></a></li>
+                <li><a href="####"><img src="images/30081486539751187%20(2).png" alt=""></a></li>
+                <li><a href="####"><img src="images/30081486539751187%20(2).png" alt=""></a></li>
+                <li><a href="####"><img src="images/30081486539751187%20(2).png" alt=""></a></li>
+                <li><a href="####"><img src="images/30081486539751187%20(2).png" alt=""></a></li>
+                <li><a href="####"><img src="images/30081486539751187%20(2).png" alt=""></a></li>
+                <li><a href="####"><img src="images/30081486539751187%20(2).png" alt=""></a></li>
+                <li><a href="####"><img src="images/30081486539751187%20(2).png" alt=""></a></li>
+            </ul>
+        </div>
+        <div class="regulate-prod">
+            护肤彩妆
+        </div>
+        <article class="change_clothing">
+            <div class="clothing_big">
+                <img src="images/35161535420188175.jpg" alt="">
+            </div>
+            <div class="clothing-container">
+                <section class="clothing-class"><a href=""><img src="images/18821535420205999.jpg" alt="">
+                    <p><a href="####">稚优泉双头高光修容棒 鼻影高光棒修容笔阴影棒 修容粉提亮轮廓</a> </p>
+                    <p><b>换</b>¥118.00</p>
+
+                </a></section>
+                <section class="clothing-class"><a href=""><img src="images/18821535420205999.jpg" alt="">
+                    <p><a href="####">稚优泉双头高光修容棒 鼻影高光棒修容笔阴影棒 修容粉提亮轮廓</a> </p>
+                    <p><b>换</b>¥118.00</p>
+
+                </a></section><section class="clothing-class"><a href=""><img src="images/18821535420205999.jpg" alt="">
+                <p><a href="####">稚优泉双头高光修容棒 鼻影高光棒修容笔阴影棒 修容粉提亮轮廓</a> </p>
+                <p><b>换</b>¥118.00</p>
+
+            </a></section><section class="clothing-class"><a href=""><img src="images/18821535420205999.jpg" alt="">
+                <p><a href="####">稚优泉双头高光修容棒 鼻影高光棒修容笔阴影棒 修容粉提亮轮廓</a> </p>
+                <p><b>换</b>¥118.00</p>
+
+            </a></section><section class="clothing-class"><a href=""><img src="images/18821535420205999.jpg" alt="">
+                <p><a href="####">稚优泉双头高光修容棒 鼻影高光棒修容笔阴影棒 修容粉提亮轮廓</a> </p>
+                <p><b>换</b>¥118.00</p>
+
+            </a></section><section class="clothing-class"><a href=""><img src="images/18821535420205999.jpg" alt="">
+                <p><a href="####">稚优泉双头高光修容棒 鼻影高光棒修容笔阴影棒 修容粉提亮轮廓</a> </p>
+                <p><b>换</b>¥118.00</p>
+
+            </a></section>
+                <section class="clothing-class"><a href=""><img src="images/18821535420205999.jpg" alt="">
+                    <p><a href="####">稚优泉双头高光修容棒 鼻影高光棒修容笔阴影棒 修容粉提亮轮廓</a> </p>
+                    <p><b>换</b>¥118.00</p>
+
+                </a></section>
+                <section class="clothing-class"><a href=""><img src="images/18821535420205999.jpg" alt="">
+                    <p><a href="####">稚优泉双头高光修容棒 鼻影高光棒修容笔阴影棒 修容粉提亮轮廓</a> </p>
+                    <p><b>换</b>¥118.00</p>
+
+                </a></section>
+
+            </div>
+        </article>
+        <div class="regulate-prod">
+            家电办公
+        </div>
+        <article class="change_clothing">
+            <div class="clothing_big">
+                <img src="images/28671535420413972.jpg" alt="">
+            </div>
+            <div class="clothing-container">
+                <section class="clothing-class"><a href=""><img src="images/25911535420423592.jpg" alt="">
+                    <p><a href="####">稚优泉双头高光修容棒 鼻影高光棒修容笔阴影棒 修容粉提亮轮廓</a> </p>
+                    <p><b>换</b>¥118.00</p>
+
+                </a></section>
+                <section class="clothing-class"><a href=""><img src="images/18821535420205999.jpg" alt="">
+                    <p><a href="####">稚优泉双头高光修容棒 鼻影高光棒修容笔阴影棒 修容粉提亮轮廓</a> </p>
+                    <p><b>换</b>¥118.00</p>
+
+                </a></section><section class="clothing-class"><a href=""><img src="images/18821535420205999.jpg" alt="">
+                <p><a href="####">稚优泉双头高光修容棒 鼻影高光棒修容笔阴影棒 修容粉提亮轮廓</a> </p>
+                <p><b>换</b>¥118.00</p>
+
+            </a></section><section class="clothing-class"><a href=""><img src="images/18821535420205999.jpg" alt="">
+                <p><a href="####">稚优泉双头高光修容棒 鼻影高光棒修容笔阴影棒 修容粉提亮轮廓</a> </p>
+                <p><b>换</b>¥118.00</p>
+
+            </a></section><section class="clothing-class"><a href=""><img src="images/18821535420205999.jpg" alt="">
+                <p><a href="####">稚优泉双头高光修容棒 鼻影高光棒修容笔阴影棒 修容粉提亮轮廓</a> </p>
+                <p><b>换</b>¥118.00</p>
+
+            </a></section><section class="clothing-class"><a href=""><img src="images/18821535420205999.jpg" alt="">
+                <p><a href="####">稚优泉双头高光修容棒 鼻影高光棒修容笔阴影棒 修容粉提亮轮廓</a> </p>
+                <p><b>换</b>¥118.00</p>
+
+            </a></section>
+                <section class="clothing-class"><a href=""><img src="images/18821535420205999.jpg" alt="">
+                    <p><a href="####">稚优泉双头高光修容棒 鼻影高光棒修容笔阴影棒 修容粉提亮轮廓</a> </p>
+                    <p><b>换</b>¥118.00</p>
+
+                </a></section>
+                <section class="clothing-class"><a href=""><img src="images/18821535420205999.jpg" alt="">
+                    <p><a href="####">稚优泉双头高光修容棒 鼻影高光棒修容笔阴影棒 修容粉提亮轮廓</a> </p>
+                    <p><b>换</b>¥118.00</p>
+
+                </a></section>
+
+            </div>
+        </article>
+        <div class="regulate-prod">
+            家居建材
+        </div>
+        <article class="change_clothing">
+            <div class="clothing_big">
+                <img src="images/11321535420685940.jpg" alt="">
+            </div>
+            <div class="clothing-container">
+                <section class="clothing-class"><a href=""><img src="images/20571535420696473.jpg" alt="">
+                    <p><a href="####">稚优泉双头高光修容棒 鼻影高光棒修容笔阴影棒 修容粉提亮轮廓</a> </p>
+                    <p><b>换</b>¥118.00</p>
+
+                </a></section>
+                <section class="clothing-class"><a href=""><img src="images/18821535420205999.jpg" alt="">
+                    <p><a href="####">稚优泉双头高光修容棒 鼻影高光棒修容笔阴影棒 修容粉提亮轮廓</a> </p>
+                    <p><b>换</b>¥118.00</p>
+
+                </a></section><section class="clothing-class"><a href=""><img src="images/18821535420205999.jpg" alt="">
+                <p><a href="####">稚优泉双头高光修容棒 鼻影高光棒修容笔阴影棒 修容粉提亮轮廓</a> </p>
+                <p><b>换</b>¥118.00</p>
+
+            </a></section><section class="clothing-class"><a href=""><img src="images/18821535420205999.jpg" alt="">
+                <p><a href="####">稚优泉双头高光修容棒 鼻影高光棒修容笔阴影棒 修容粉提亮轮廓</a> </p>
+                <p><b>换</b>¥118.00</p>
+
+            </a></section><section class="clothing-class"><a href=""><img src="images/18821535420205999.jpg" alt="">
+                <p><a href="####">稚优泉双头高光修容棒 鼻影高光棒修容笔阴影棒 修容粉提亮轮廓</a> </p>
+                <p><b>换</b>¥118.00</p>
+
+            </a></section><section class="clothing-class"><a href=""><img src="images/18821535420205999.jpg" alt="">
+                <p><a href="####">稚优泉双头高光修容棒 鼻影高光棒修容笔阴影棒 修容粉提亮轮廓</a> </p>
+                <p><b>换</b>¥118.00</p>
+
+            </a></section>
+                <section class="clothing-class"><a href=""><img src="images/18821535420205999.jpg" alt="">
+                    <p><a href="####">稚优泉双头高光修容棒 鼻影高光棒修容笔阴影棒 修容粉提亮轮廓</a> </p>
+                    <p><b>换</b>¥118.00</p>
+
+                </a></section>
+                <section class="clothing-class"><a href=""><img src="images/18821535420205999.jpg" alt="">
+                    <p><a href="####">稚优泉双头高光修容棒 鼻影高光棒修容笔阴影棒 修容粉提亮轮廓</a> </p>
+                    <p><b>换</b>¥118.00</p>
+
+                </a></section>
+
+            </div>
+        </article>
+        <aside></aside>
+    </main>
+    <footer class="footer">
+        <div class="ywall-desc">
+            <dl>
+                <dt>新手指南</dt>
+                <dd>会员注册</dd>
+                <dd>实名认证</dd>
+                <dd>商品发布</dd>
+                <dd>需求设置</dd>
+            </dl>
+            <dl>
+                <dt>如何交换</dt>
+                <dd>寻找商品</dd>
+                <dd>发起订单</dd>
+                <dd>回复订单</dd>
+                <dd>如何支付</dd>
+            </dl>
+            <dl>
+                <dt>易物服务</dt>
+                <dd>易物案例</dd>
+                <dd>会议通知</dd>
+                <dd>会员类型</dd>
+                <dd>渠道合作</dd>
+            </dl>
+            <dl>
+                <dt>交易安全</dt>
+                <dd>交易保障</dd>
+                <dd>防骗指南</dd>
+                <dd>交易纠纷</dd>
+                <dd>投诉举报</dd>
+            </dl>
+            <dl>
+                <dt>常见问题</dt>
+                <dd>密码找回</dd>
+                <dd>店铺设置</dd>
+                <dd>在线交流</dd>
+                <dd>收费标准</dd>
+            </dl>
+            <dl>
+
+                <dt>关于我们</dt>
+                <dd>联系我们</dd>
+                <dd>法律声明</dd>
+                <dd>帮助中心</dd>
+                <dd>新闻中心</dd>
+            </dl>
+
+        </div>
+        <div class="footer_rit_box">
+            <p><img src="images/appstore.png" alt=""></p>
+            <img src="images/cont11.jpg" alt="">
+            <img src="images/cont11_1.jpg" alt="">
+            <p>手机客户端
+&nbsp;&nbsp;&nbsp;&nbsp;
+                微信公众号</p>
+        </div>
+        <div class="clear"></div>
+        <div class="footer_link">
+            <div class="foot-link-img">
+                <img src="images/file1.png" alt="">
+                <img src="images/file2.png" alt="">
+                <img src="images/file3.png" alt="">
+                <img src="images/file4.png" alt="">
+                <img src="images/file5.png" alt="">
+            </div>
+        </div>
+        <div class="footer-link-text">
+            <ul>
+
+
+                <li>关于我们 | 联系我们| 法律声明| 帮助中心</li>
+                <li>                增值电信业务经营许可证：B2-20150472出版物经营许可证：新出发京零字第朝150038号
+                </li>
+                <li>                CopyRight 2011-2020易物恒通（北京）国际投资股份有限公司版权所有
+                </li>
+                <li>                电信与信息服务业务经营许可证：京ICP证130283号网站备案号：京ICP备13021400号网站备案号:京公网安备11010502024906
+                </li>
+                <li>                易物恒通（北京）国际投资股份有限公司统一社会信用代码：91110105573162031B
+                </li>
+            </ul>
+        </div>
+    </footer>
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>

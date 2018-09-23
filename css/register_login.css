@@ -1,0 +1,284 @@
+
+
+.div-register{
+    width: 540px;
+    height: 427px;
+    margin: auto;
+    margin-top: 100px;
+    box-shadow: -2px 0px 10px grey;
+}
+.id-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.id-container>div{
+    border-bottom: 1px solid red;
+    /*box-sizing: border-box;*/
+    width: 180px;
+    text-align: center;
+    /*background-color: #333333;*/
+    /*-webkit-user-select:none;*/
+    /*vertical-align: middle;*/
+    /*-moz-user-select:none;*/
+    display: block;
+    line-height: 100px;
+
+    -ms-user-select:none;
+
+    user-select:none;
+}
+.login-div{
+    text-align: center;
+    font-size: 18px;
+    color: lightgreen;
+}
+.id-container div:hover{
+    background-color: rgba(0,231,240,0.38);
+}
+.id-container div:hover{
+    cursor:default;
+}
+.id-container div img{
+    /*position: relative;*/
+    /*top: 11px;*/
+}
+.id-container div{
+    font: 400 14px/1.6 arial,'Hiragino Sans GB',\5b8b\4f53,sans-serif;
+}
+.input-div>div:nth-child(1){
+    width: 300px;
+    height: 40px;
+    box-sizing: border-box;
+    margin: auto;
+    margin-top: 36px;
+    text-align: center;!important;
+    font-size: 18px;
+    line-height: 40px;
+    /*display: flex;*/
+}
+.input-div div:nth-child(2){
+    border: none;
+}
+.input-div div:hover{
+    cursor: pointer;
+}
+.input-div>div:nth-child(1)>div:nth-child(1){
+    width: 60px;
+    height: 100%;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 104, 110, 0.72);
+    float: left;
+    margin: 0px;
+    color: #5a5a5a;
+
+}
+.input-div>div:nth-child(1)>div:nth-child(2){
+    width: 240px;
+    height: 100%;
+    float: left;
+    background-color: #ff9ca5;
+    margin: 0px;
+}
+.input-div>div:nth-child(1)>div:nth-child(2) input{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    outline: none;
+}
+.input-div>div:nth-child(2){
+    box-sizing: border-box;
+}
+.input-div>div:nth-child(3){
+    background-color: rgba(167, 42, 76, 0.84);
+    color: #b1c3ff;
+    width: 300px;
+    height: 40px;
+    margin: 0 auto;
+    line-height: 40px;
+    text-align: center;
+    margin-top: 20px;
+    letter-spacing: 2px;
+    border-radius: 5px;
+}
+#verification{
+    border: 1px solid blue;
+}
+.have-account{
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    display: block;
+    text-align: center;
+    font-size: 14px;
+}
+.have-account a{
+    margin-left: 300px;
+}
+.login-third{
+    width: 100%;
+    height: 60px;
+}
+.login-third p{
+    text-align: center;
+    font-size: 14px;
+    color: grey;
+}
+.login-third .login-third-icon{
+    display: flex;
+    justify-content: center;
+}
+.login-third .login-third-icon div{
+    width: 25px;
+    height:25px;
+    margin-top: 10px;
+    margin-left: 10px;
+    background-image: url("../images/register/ico-bind-logo.png");
+}
+.login-third .login-third-icon div:nth-child(1){
+    background-position: 0px 216px;
+}
+.login-third .login-third-icon div:nth-child(2){
+    background-position: 0px 174px;
+
+}
+.login-third .login-third-icon div:nth-child(3){
+    background-position: 0px 134px;
+
+}
+.login-third .login-third-icon div:nth-child(4){
+    background-position: 0px 94px;
+
+}
+.login-third .login-third-icon div:nth-child(5){
+    background-position: 0px 62px;
+}
+.account-msg{
+    width: 540px;
+    height: 373px;
+    /*display: flex;*/
+    justify-content: center;
+    flex-direction: column;
+    display: none;
+}
+.account-msg>div{
+    width: 300px;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 40px;
+    line-height: 40px;
+}
+.account-msg>div div{
+    width: 60px;
+    float: left;
+    text-align: center;
+    height: 40px;
+    font-size: 14px;
+    border: 1px solid #ff9aa3;
+    box-sizing: border-box;
+}
+
+.account-msg>div input{
+    width: 240px;
+    height: 40px;
+    outline: none;
+    font-size: 14px;
+    border: 1px solid grey;
+    box-sizing: border-box;
+}
+.account-msg>div:nth-child(4){
+    text-align: center;
+    font-size: 18px;
+    border: 1px solid grey;
+    box-sizing: border-box;
+    background-color: #a7676d;
+    border-radius: 5px;
+    color: #b1c3ff;
+}
+.account-msg>div:nth-child(4):hover{
+    cursor: pointer;
+}
+.telephone-div{
+    /*display: none;*/
+}
+.register-success{
+    width: 540px;
+    height: 373px;
+    display: none;
+    /*display: flex;*/
+    justify-content: center;
+    flex-direction: column;
+}
+.register-success:hover{
+    cursor: pointer;
+}
+.register-success img{
+    margin-bottom: 10px;
+}
+.register-success p{
+    text-align: center;
+    font-size: 15px;
+    margin: 20px;
+    color: #05bf0b;
+}
+.register-success div{
+    width: 400px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border: 1px solid grey;
+    margin: 0px auto;
+    box-sizing: border-box;
+    background-color: #a71d5d;
+}
+.login-success{
+    width: 540px;
+    height: 373px;
+    display: none;
+    /*display: flex;*/
+    justify-content: center;
+    flex-direction: column;
+}
+.login-success:hover{
+    cursor: pointer;
+}
+.login-success img{
+    margin-bottom: 10px;
+}
+.login-success p{
+    text-align: center;
+    font-size: 15px;
+    margin: 20px;
+    color: #05bf0b;
+}
+.login-success div{
+    width: 400px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border: 1px solid grey;
+    margin: 0px auto;
+    box-sizing: border-box;
+    background-color: #a71d5d;
+}
+
+/*验证提示*/
+.news-tips{
+    line-height: 10px;
+    color: red;
+}
+/*密码进度条*/
+.progress_psd_par{
+    width: 400px!important;
+    height: 10px!important;
+    display: none;
+}
+.progress_psd_par>div{
+    width:25%;
+}
+
+/*拖动按钮进行验证*/
